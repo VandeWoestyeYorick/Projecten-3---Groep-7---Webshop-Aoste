@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.promo.body
+    - field.field.node.promo.field_einddatum
     - field.field.node.promo.field_image
     - field.field.node.promo.field_promo_producten
     - image.style.thumbnail
     - node.type.promo
   module:
+    - datetime
     - image
     - path
     - text
@@ -26,6 +28,12 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    region: content
+  field_einddatum:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_image:
     weight: 3

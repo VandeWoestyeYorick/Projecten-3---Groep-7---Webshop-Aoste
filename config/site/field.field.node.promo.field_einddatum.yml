@@ -1,0 +1,21 @@
+uuid: b43fab77-58e5-4ce1-9479-02451fc95729
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_einddatum
+    - node.type.promo
+  module:
+    - datetime
+id: node.promo.field_einddatum
+field_name: field_einddatum
+entity_type: node
+bundle: promo
+label: Einddatum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
