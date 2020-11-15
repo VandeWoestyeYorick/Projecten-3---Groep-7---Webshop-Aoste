@@ -1,0 +1,20 @@
+uuid: 29582f9c-91e2-408e-ace0-51b042de3a1c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_voeding_koolhydraten
+field_name: field_voeding_koolhydraten
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

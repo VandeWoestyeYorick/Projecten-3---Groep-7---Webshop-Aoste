@@ -1,0 +1,21 @@
+uuid: 4f027f6e-1679-4617-abc8-878619d9043b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recept_bereidingswijze
+    - node.type.recept
+  module:
+    - text
+id: node.recept.field_recept_bereidingswijze
+field_name: field_recept_bereidingswijze
+entity_type: node
+bundle: recept
+label: Bereidingswijze
+description: 'De bereidingswijze voor het recept.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

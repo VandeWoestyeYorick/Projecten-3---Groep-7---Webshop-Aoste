@@ -1,0 +1,20 @@
+uuid: b4431f09-036a-4123-b249-2346a4a4a21d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_voeding_zout
+field_name: field_voeding_zout
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 30ce12a9-4644-47b5-b977-982b1e639c1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recept_ingredienten
+    - node.type.recept
+  module:
+    - text
+id: node.recept.field_recept_ingredienten
+field_name: field_recept_ingredienten
+entity_type: node
+bundle: recept
+label: Ingrediënten
+description: 'De ingrediënten gebruikt voor het recept.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

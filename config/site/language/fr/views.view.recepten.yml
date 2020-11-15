@@ -1,0 +1,10 @@
+label: Recette
+description: 'Aperçu des recettes.'
+display:
+  default:
+    display_options:
+      title: Recette
+  page_1:
+    display_options:
+      menu:
+        title: Recette

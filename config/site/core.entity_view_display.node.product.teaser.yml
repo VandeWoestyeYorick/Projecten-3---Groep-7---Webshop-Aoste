@@ -1,0 +1,66 @@
+uuid: 199d3416-c7e9-4f2d-9c68-8b7eec66b09a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.body
+    - field.field.node.product.field_image
+    - field.field.node.product.field_nutriscore
+    - field.field.node.product.field_product_allergenen
+    - field.field.node.product.field_product_categorie
+    - field.field.node.product.field_product_gewicht
+    - field.field.node.product.field_product_ingredienten
+    - field.field.node.product.field_product_retailers
+    - field.field.node.product.field_voeding_eiwitten
+    - field.field.node.product.field_voeding_energie
+    - field.field.node.product.field_voeding_kilocalorieen
+    - field.field.node.product.field_voeding_koolhydraten
+    - field.field.node.product.field_voeding_suikers
+    - field.field.node.product.field_voeding_verzadigde_vetten
+    - field.field.node.product.field_voeding_vetten
+    - field.field.node.product.field_voeding_zout
+    - image.style.medium
+    - node.type.product
+  module:
+    - image
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_product_categorie:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_nutriscore: true
+  field_product_allergenen: true
+  field_product_gewicht: true
+  field_product_ingredienten: true
+  field_product_retailers: true
+  field_voeding_eiwitten: true
+  field_voeding_energie: true
+  field_voeding_kilocalorieen: true
+  field_voeding_koolhydraten: true
+  field_voeding_suikers: true
+  field_voeding_verzadigde_vetten: true
+  field_voeding_vetten: true
+  field_voeding_zout: true
+  langcode: true
+  links: true

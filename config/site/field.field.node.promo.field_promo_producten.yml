@@ -1,0 +1,28 @@
+uuid: fb3f47eb-d2f9-4436-b751-31d7c02ce9d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promo_producten
+    - node.type.product
+    - node.type.promo
+id: node.promo.field_promo_producten
+field_name: field_promo_producten
+entity_type: node
+bundle: promo
+label: Producten
+description: 'verwijzingen naar de producten waarop deze promo van toepassing is'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

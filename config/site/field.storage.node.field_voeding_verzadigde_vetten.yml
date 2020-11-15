@@ -1,0 +1,20 @@
+uuid: 9affc77a-f478-4cd3-9391-00a7e8992462
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_voeding_verzadigde_vetten
+field_name: field_voeding_verzadigde_vetten
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: c8bceae1-7288-4434-9a75-ec4ea5e48c0d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_voeding_energie
+field_name: field_voeding_energie
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

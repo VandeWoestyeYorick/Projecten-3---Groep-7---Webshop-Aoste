@@ -1,0 +1,18 @@
+uuid: 83a74995-95ed-4190-9b30-eb2253111df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.promo
+id: node.promo.title
+field_name: title
+entity_type: node
+bundle: promo
+label: 'Promo Titel'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

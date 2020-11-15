@@ -1,0 +1,17 @@
+uuid: 7738281a-1355-4674-ab38-dac8afa763e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Promo
+type: promo
+description: 'Een promotie voor producten '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

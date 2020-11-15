@@ -1,0 +1,23 @@
+uuid: cbec7afb-0ca6-4827-83ed-d4cc100b09a2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voeding_energie
+    - node.type.product
+id: node.product.field_voeding_energie
+field_name: field_voeding_energie
+entity_type: node
+bundle: product
+label: Energie
+description: 'Energie per 100g'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: KJ
+field_type: integer

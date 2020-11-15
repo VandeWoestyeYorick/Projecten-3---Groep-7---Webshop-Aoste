@@ -1,0 +1,20 @@
+uuid: e751d607-a0b8-4dd8-950a-3de4d4e30511
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_voeding_vetten
+field_name: field_voeding_vetten
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

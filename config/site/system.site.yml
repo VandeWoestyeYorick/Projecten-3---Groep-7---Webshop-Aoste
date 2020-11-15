@@ -1,0 +1,14 @@
+uuid: 80b799e7-66af-4ba9-a82b-822a4eb1bd5d
+name: github
+mail: Aoste@info.be
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

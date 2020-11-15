@@ -1,0 +1,24 @@
+uuid: 0bd796bd-1358-4324-8a1a-ad220909b0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorie.field_categorie_afbeelding
+    - taxonomy.vocabulary.categorie
+  module:
+    - text
+id: taxonomy_term.categorie.default
+targetEntityType: taxonomy_term
+bundle: categorie
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_categorie_afbeelding: true
+  langcode: true

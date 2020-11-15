@@ -1,0 +1,23 @@
+uuid: 0420ec5f-981e-44b1-a5fb-8730ee48828c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voeding_kilocalorieen
+    - node.type.product
+id: node.product.field_voeding_kilocalorieen
+field_name: field_voeding_kilocalorieen
+entity_type: node
+bundle: product
+label: Kilocalorieën
+description: 'Kilocalorieën per 100g'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: KCAL
+field_type: integer

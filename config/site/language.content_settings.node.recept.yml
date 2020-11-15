@@ -1,0 +1,18 @@
+uuid: 31b9dd98-15dc-4f93-b124-f3bb0f01eb38
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recept
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.recept
+target_entity_type_id: node
+target_bundle: recept
+default_langcode: nl
+language_alterable: true

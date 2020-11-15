@@ -1,0 +1,8 @@
+uuid: 6b86ea9b-7baa-4dfe-98db-9e5067612952
+langcode: nl
+status: true
+dependencies: {  }
+name: Categorie
+vid: categorie
+description: 'De categorieën van producten'
+weight: 0

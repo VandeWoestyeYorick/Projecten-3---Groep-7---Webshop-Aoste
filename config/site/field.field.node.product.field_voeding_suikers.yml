@@ -1,0 +1,23 @@
+uuid: 77f7e4d9-cf7c-40e2-92c5-52055b7d66bd
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voeding_suikers
+    - node.type.product
+id: node.product.field_voeding_suikers
+field_name: field_voeding_suikers
+entity_type: node
+bundle: product
+label: Suikers
+description: 'suikers per 100 gram'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: g
+field_type: decimal

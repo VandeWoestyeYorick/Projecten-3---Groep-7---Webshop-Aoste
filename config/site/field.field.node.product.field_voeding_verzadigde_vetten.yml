@@ -1,0 +1,23 @@
+uuid: 3f9cebcb-eb10-4c57-8402-3c49cc3ccc61
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voeding_verzadigde_vetten
+    - node.type.product
+id: node.product.field_voeding_verzadigde_vetten
+field_name: field_voeding_verzadigde_vetten
+entity_type: node
+bundle: product
+label: 'Verzadigde Vetten'
+description: 'Verzadigde vetten per 100 gral'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: g
+field_type: decimal

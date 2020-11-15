@@ -1,0 +1,17 @@
+uuid: 2207d5ab-0a37-488e-8b9e-b9a007f22355
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Recept
+type: recept
+description: 'Gebruik <i>recept</i> voor het aanmaken van nieuwe recepten.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

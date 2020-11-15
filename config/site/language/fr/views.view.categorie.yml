@@ -1,0 +1,10 @@
+label: Catégorie
+description: 'Aperçu des catégories.'
+display:
+  default:
+    display_options:
+      title: Catégorie
+  page_1:
+    display_options:
+      menu:
+        title: Catégorie

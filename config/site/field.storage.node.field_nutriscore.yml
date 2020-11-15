@@ -1,0 +1,36 @@
+uuid: c2da6684-5453-4208-be62-7fcd739df2ad
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_nutriscore
+field_name: field_nutriscore
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: A
+      label: A
+    -
+      value: B
+      label: B
+    -
+      value: C
+      label: C
+    -
+      value: D
+      label: D
+    -
+      value: E
+      label: E
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

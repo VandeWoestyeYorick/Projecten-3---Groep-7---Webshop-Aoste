@@ -1,0 +1,23 @@
+uuid: 27bb31b3-0a34-4f9b-9c30-c4dd00e55a2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recept_porties
+    - node.type.recept
+id: node.recept.field_recept_porties
+field_name: field_recept_porties
+entity_type: node
+bundle: recept
+label: Porties
+description: 'Het aantal porties voor het recept.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

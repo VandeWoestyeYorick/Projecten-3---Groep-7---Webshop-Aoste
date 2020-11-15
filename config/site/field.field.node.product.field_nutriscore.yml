@@ -1,0 +1,21 @@
+uuid: 719f1b24-afd0-453d-a823-8bf712ef88d5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nutriscore
+    - node.type.product
+  module:
+    - options
+id: node.product.field_nutriscore
+field_name: field_nutriscore
+entity_type: node
+bundle: product
+label: Nutriscore
+description: 'Nutri-Score letter'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

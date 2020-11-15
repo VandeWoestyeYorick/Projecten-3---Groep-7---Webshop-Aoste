@@ -1,0 +1,18 @@
+uuid: c6b14f3a-ab95-45b5-94a8-695b2da7ed0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recept
+id: node.recept.title
+field_name: title
+entity_type: node
+bundle: recept
+label: Receptnaam
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

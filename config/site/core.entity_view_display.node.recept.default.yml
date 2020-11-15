@@ -1,0 +1,77 @@
+uuid: c08c76d2-75bf-4482-b10c-322fa7f3a022
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recept.field_recept_afbeelding
+    - field.field.node.recept.field_recept_bereidingstijd
+    - field.field.node.recept.field_recept_bereidingswijze
+    - field.field.node.recept.field_recept_gebruikte_producten
+    - field.field.node.recept.field_recept_ingredienten
+    - field.field.node.recept.field_recept_porties
+    - node.type.recept
+  module:
+    - image
+    - text
+    - user
+id: node.recept.default
+targetEntityType: node
+bundle: recept
+mode: default
+content:
+  field_recept_afbeelding:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_recept_bereidingstijd:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_recept_bereidingswijze:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_recept_gebruikte_producten:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_recept_ingredienten:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_recept_porties:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

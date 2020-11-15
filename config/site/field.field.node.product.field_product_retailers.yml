@@ -1,0 +1,23 @@
+uuid: 923feb45-6400-4a8d-a013-aa1a88c143b5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_retailers
+    - node.type.product
+  module:
+    - link
+id: node.product.field_product_retailers
+field_name: field_product_retailers
+entity_type: node
+bundle: product
+label: Retailers
+description: "links naar aanbod externe verkopers\r\neffectieve link in het url veld en naam verkoper als Linktekst"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

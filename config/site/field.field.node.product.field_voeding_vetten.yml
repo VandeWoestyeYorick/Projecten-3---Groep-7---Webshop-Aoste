@@ -1,0 +1,23 @@
+uuid: 8de49e81-7300-4054-a6d1-f5e0a9812609
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voeding_vetten
+    - node.type.product
+id: node.product.field_voeding_vetten
+field_name: field_voeding_vetten
+entity_type: node
+bundle: product
+label: Vetten
+description: 'Vetten per 100 gram'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: g
+field_type: decimal

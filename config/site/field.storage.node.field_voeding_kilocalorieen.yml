@@ -1,0 +1,20 @@
+uuid: 709a7fd0-7081-4f27-a1fb-b65e2ea9f31c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_voeding_kilocalorieen
+field_name: field_voeding_kilocalorieen
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

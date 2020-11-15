@@ -1,0 +1,20 @@
+uuid: 77fc6a6b-e733-4695-b16a-724c2670621b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_recept_porties
+field_name: field_recept_porties
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

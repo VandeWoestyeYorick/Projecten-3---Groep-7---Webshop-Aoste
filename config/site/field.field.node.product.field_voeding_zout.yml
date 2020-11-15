@@ -1,0 +1,23 @@
+uuid: 52f3040c-0917-4f93-9e36-6595c5b0068a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voeding_zout
+    - node.type.product
+id: node.product.field_voeding_zout
+field_name: field_voeding_zout
+entity_type: node
+bundle: product
+label: Zout
+description: 'zout per 100 gram'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: g
+field_type: decimal

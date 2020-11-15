@@ -1,0 +1,21 @@
+uuid: 774c0b36-b0be-4174-9a9f-18332615aa25
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_ingredienten
+    - node.type.product
+  module:
+    - text
+id: node.product.field_product_ingredienten
+field_name: field_product_ingredienten
+entity_type: node
+bundle: product
+label: Ingrediënten
+description: 'Ingrediënten van het product'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

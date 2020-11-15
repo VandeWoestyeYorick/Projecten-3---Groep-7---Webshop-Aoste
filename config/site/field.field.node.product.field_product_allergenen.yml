@@ -1,0 +1,21 @@
+uuid: e11e41e3-a349-409e-a0c8-9eb4a237de07
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_allergenen
+    - node.type.product
+  module:
+    - text
+id: node.product.field_product_allergenen
+field_name: field_product_allergenen
+entity_type: node
+bundle: product
+label: Allergenen
+description: 'Lijst van mogelijke allergenen '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

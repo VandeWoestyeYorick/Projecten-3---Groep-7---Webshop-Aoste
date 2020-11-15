@@ -1,0 +1,43 @@
+uuid: 7da371fb-de21-46c8-aed2-f9fec5d71e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recept.field_recept_afbeelding
+    - field.field.node.recept.field_recept_bereidingstijd
+    - field.field.node.recept.field_recept_bereidingswijze
+    - field.field.node.recept.field_recept_gebruikte_producten
+    - field.field.node.recept.field_recept_ingredienten
+    - field.field.node.recept.field_recept_porties
+    - image.style.medium
+    - node.type.recept
+  module:
+    - image
+    - user
+id: node.recept.teaser
+targetEntityType: node
+bundle: recept
+mode: teaser
+content:
+  field_recept_afbeelding:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_recept_bereidingstijd: true
+  field_recept_bereidingswijze: true
+  field_recept_gebruikte_producten: true
+  field_recept_ingredienten: true
+  field_recept_porties: true
+  langcode: true
