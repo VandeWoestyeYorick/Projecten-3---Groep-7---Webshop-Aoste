@@ -5,6 +5,7 @@ base theme: bootstrap
 name: 'Bootstrap custom'
 description: 'Bootstrap is the best'
 package: 'Bootstrap'
+screenshot: 'aoste.png'
 
 regions:
   branding: 'Branding'
