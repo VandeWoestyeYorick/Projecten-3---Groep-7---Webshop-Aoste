@@ -51,9 +51,11 @@
       'field--label',
       label_display == 'visually_hidden' ? 'sr-only',
     ]
-  %}
-  
+  %}  
+
+  <tr>
   {% if label_hidden %}
+
     {% if multiple %}
       <div{{ attributes.addClass(classes, 'field--items') }}>
         {% for item in items %}
@@ -67,16 +69,19 @@
     {% endif %}
   {% else %}
     <div{{ attributes.addClass(classes) }}>
-      <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+      <th><div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div></th>
       {% if multiple %}
         <div class="field__items">
       {% endif %}
+      <td>
       {% for item in items %}
         <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
       {% endfor %}
+    </td>
       {% if multiple %}
         </div>
       {% endif %}
     </div>
   {% endif %}
+  </tr>
   

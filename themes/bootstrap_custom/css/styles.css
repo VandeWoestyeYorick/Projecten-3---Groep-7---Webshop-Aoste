@@ -147,9 +147,10 @@
 .field-type-image{
 
 }
-.field--type-text-with-summary .field--item{
+.field--type-text-with-summary >p{
     font-size:26px;
-    font-weight: 400;
+    font-weight: 300;
+    color:#707070;
 }
 .field--name-field-product-categorie .field--label{
     display: none;
@@ -174,12 +175,7 @@
 .page-header{
     color: #C21E3D;
     text-align: center;
-    text-decoration: underline;
 }
-.field--name-field-image .field--label{
-    display:none;
-}
-.field--name-field-product-ingredienten .field--item{
-    font-size:14px;
-    color:#979797
+.a:hover{
+    color: #C21E3D; 
 }
