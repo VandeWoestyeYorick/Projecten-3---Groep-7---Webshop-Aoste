@@ -135,3 +135,51 @@
 .test {
     display: inline-block
 }
+
+
+.product{
+    
+    
+}
+.content{
+  
+}
+.field-type-image{
+
+}
+.field--type-text-with-summary .field--item{
+    font-size:26px;
+    font-weight: 400;
+}
+.field--name-field-product-categorie .field--label{
+    display: none;
+}
+.field--name-field-product-categorie .field__items{
+    text-decoration: underline;
+    display: inline;
+    color:#707070;
+    font-size:17px;
+    font-family: 'Segoe UI';
+}
+.field--label{
+    color:#C21E3D;
+    font-size:30px;
+    font-weight: 500;
+}
+.field--item{
+    color:#707070;
+    font-size:30px;
+    font-weight: 500;
+}
+.page-header{
+    color: #C21E3D;
+    text-align: center;
+    text-decoration: underline;
+}
+.field--name-field-image .field--label{
+    display:none;
+}
+.field--name-field-product-ingredienten .field--item{
+    font-size:14px;
+    color:#979797
+}
