@@ -1,198 +1,193 @@
 .nav-custom {
-    background-color: #363636;
-    color: #FFF;
+  background-color: #363636;
+  color: #fff;
 }
 
 .nav-custom .navbar-text {
-    color: #FFF;
+  color: #fff;
 }
 
 .navbar-text {
-    color: #FFF;
+  color: #fff;
 }
 
 .navbar-text .nav-link {
-    color: #FFF;
+  color: #fff;
 }
 
 .header-custom {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* padding: 30px; */
-    margin: 0 auto;
-    justify-content: space-between;
-    /* width: 100%; */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 30px; */
+  margin: 0 auto;
+  justify-content: space-between;
+  /* width: 100%; */
 }
 
 .searchbar {
-    /* margin: 0 auto; */
-    border-radius: 25px;
+  /* margin: 0 auto; */
+  border-radius: 25px;
 }
 
 .input-group {
-    max-width: 25%;
+  max-width: 25%;
 }
 
 .btn {
-    background-color: #C21E3D;
+  background-color: #c21e3d;
 }
 
 .container-fluid {
-    padding: 0 5%;
+  padding: 0 5%;
 }
 
 .carousel-custom {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .header-padding {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .uitgelichte-recepten {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .recepten-title {
-    color: #C21E3D;
-    display: inline;
+  color: #c21e3d;
+  display: inline;
 }
 
 .recept {
-    border: 4px solid #C21E3D;
-    border-radius: 10px;
-    /* border-color: #C21E3D;
+  border: 4px solid #c21e3d;
+  border-radius: 10px;
+  /* border-color: #C21E3D;
     border-width: 2px; */
-    width: 60%;
-    padding: 10px;
+  width: 60%;
+  padding: 10px;
 }
 
 .recept-image {
-    width: 30%;
-    height: auto;
+  width: 30%;
+  height: auto;
 }
 
 .recepten-content {
-    color: black;
+  color: black;
 }
 
 .leesmeer-btn {
-    background-color: #C21E3D;
-    /* Green */
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    font-size: 16px;
+  background-color: #c21e3d;
+  /* Green */
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .recepten-grid {
-    /* width: 50%;
+  /* width: 50%;
     margin: 0 auto; */
-    padding: 10px;
+  padding: 10px;
 }
 
 .footer {
-    background-color: #363636;
-    color: white;
-    display: flex;
-    padding: 3%;
-    margin: 0 auto;
+  background-color: #363636;
+  color: white;
+  display: flex;
+  padding: 3%;
+  margin: 0 auto;
 }
 
 .padding-recepten-title {
-    /* padding: 10px; */
-    padding: 200px auto 10px auto;
+  /* padding: 10px; */
+  padding: 200px auto 10px auto;
 }
 
 .footer-content {
-    padding: 0 5px 0 5px;
-    font-size: 14px;
-    color: white;
-    display: block;
+  padding: 0 5px 0 5px;
+  font-size: 14px;
+  color: white;
+  display: block;
 }
 
 .footer-content-categorie {
-    font-size: 14px;
-    color: white;
+  font-size: 14px;
+  color: white;
 }
 
 .footer-column {
-    /* display: block; */
-    padding: 0 5px 0 0;
+  /* display: block; */
+  padding: 0 5px 0 0;
 }
 
 .test {
-    display: inline-block
+  display: inline-block;
 }
 
-
-.product{
-    
-    
+.product {
 }
-.content{
-  
+.content {
 }
-.field-type-image{
-
+.field-type-image {
 }
-.field--type-text-with-summary >p{
-    font-size:26px;
-    font-weight: 300;
-    color:#707070;
+.field--type-text-with-summary > p {
+  font-size: 26px;
+  font-weight: 300;
+  color: #707070;
 }
-.field--name-field-product-categorie .field--label{
-    display: none;
+.field--name-field-product-categorie .field--label {
+  display: none;
 }
-.field--name-field-product-categorie .field__items{
-    text-decoration: underline;
-    display: inline;
-    color:#707070;
-    font-size:17px;
-    font-family: 'Segoe UI';
+.field--name-field-product-categorie .field__items {
+  text-decoration: underline;
+  display: inline;
+  color: #707070;
+  font-size: 17px;
+  font-family: "Segoe UI";
 }
-.field--label{
-    color:#C21E3D;
-    font-size:30px;
-    font-weight: 500;
+.field--label {
+  color: #c21e3d;
+  font-size: 30px;
+  font-weight: 500;
 }
-.field--item{
-    color:#707070;
-    font-size:30px;
-    font-weight: 500;
+.field--item {
+  color: #707070;
+  font-size: 30px;
+  font-weight: 500;
 }
-.page-header{
-    color: #C21E3D;
-    text-align: center;
+.page-header {
+  color: #c21e3d;
+  text-align: center;
 }
-a:hover{
-    color: #C21E3D; 
+a:hover {
+  color: #c21e3d;
 }
 
-.koopnu{
-    color:white;
-    font-size: 7rem;
-    font-weight: 700;
-    background-color: #C21E3D;
-    display: flex;
-    width: 100%;
-    height: 10rem;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+.koopnu {
+  color: white;
+  font-size: 7rem;
+  font-weight: 700;
+  background-color: #c21e3d;
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }
-.dropdown-menu{
+/* .dropdown-menu{
     width: 100%; 
 }
 .dropdown-item {
@@ -201,15 +196,13 @@ a:hover{
     display: flex;  
     height: 1rem;
    
+} */
+.col {
+  font-size: 4rem;
 }
-.col{
-    font-size: 4rem;
+.rij {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color: green;
 }
-.rij{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    color:green;
-}
-
-
