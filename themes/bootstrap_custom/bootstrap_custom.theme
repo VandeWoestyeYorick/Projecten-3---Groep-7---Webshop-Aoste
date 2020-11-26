@@ -5,3 +5,8 @@
  *
  * Place your custom PHP code in this file.
  */
+function bootstrap_custom_preprocess_block(&$variables) {
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
+}
