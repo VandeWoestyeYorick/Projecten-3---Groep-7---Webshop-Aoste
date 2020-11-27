@@ -75,28 +75,53 @@
     'clearfix',
   ]
 %}
-<article{{ attributes.addClass(classes) }} class="justify-content-center">
+<article class="receptOne" {{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  <h2{{ title_attributes }}>
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if display_submitted %}
+    {% if display_submitted %}
     <footer>
       {{ author_picture }}
       <div{{ author_attributes.addClass('author') }}>
         {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
         {{ metadata }}
-      </div>
+        </div>
     </footer>
-  {% endif %}
-
-  <div class="container" {{ content_attributes.addClass('content') }}>
-    {{ content }}
-  </div>
+    {% endif %}
+    {% if label_hidden %}
+    {% else %}
+    <div {{ content_attributes.addClass('content') }}>
+      <div class="afbtext">
+        <div class="centraal">
+          {{ content.field_recept_afbeelding }}
+        </div>
+        <p class="gebruikteProducten">
+        <div class="kaart front">
+          <div class="personal-intro">
+            {{ content.	field_recept_gebruikte_producten }}
+          </div>
+        </div>
+        </p>
+      </div>
+      <div class="rij">
+        {{ content.field_recept_bereidingstijd }}
+        {{ content.field_recept_porties }}
+      </div>
+      <div class="BedIng">
+        <div class="ingredienten">
+          {{ content.field_recept_ingredienten }}
+        </div>
+        <div class="bereidingswijze">
+          {{ content.field_recept_bereidingswijze }}
+        </div>
+      </div>
+    </div>
+{% endif %}
 
 </article>
