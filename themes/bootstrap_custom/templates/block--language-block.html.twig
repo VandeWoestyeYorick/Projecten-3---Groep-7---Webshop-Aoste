@@ -1,11 +1,9 @@
-<h1>hello</h1>
-
 {% if language == 'en' %}
-	<h2>English</h2>
+	<a class="navbar-text" href="/nl">NL</a>
 {% elseif language == 'nl' %}
-	<h2>Nederlands</h2>
+	<a class="navbar-text" href="/fr">FR</a>
 {% elseif language == 'fr' %}
-	<h2>Francais</h2>
+	<a class="navbar-text" href="/nl">NL</a>
 {% else %}
-	<h2>Language unknown</h2>
+	<a class="navbar-text" href="nl">NL</a>
 {% endif %}

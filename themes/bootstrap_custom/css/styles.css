@@ -1,13 +1,21 @@
+a:hover {
+  text-decoration: none;
+}
+
 .nav-custom {
   background-color: #363636;
-  color: #fff;
 }
 
 .nav-custom .navbar-text {
-  color: #fff;
+  /*color: #f00;*/
 }
 
 .navbar-text {
+  /*color: #b2b8c2;*/
+  color: #d4d4d4;
+}
+
+.navbar-text:hover {
   color: #fff;
 }
 
@@ -205,4 +213,20 @@ a:hover {
   flex-wrap: nowrap;
   justify-content: space-around;
   color: green;
+}
+
+.lang-label {
+    display: flex;
+    width: 4rem;
+    height:;
+}
+
+.language-hover:hover {
+    background: #fff;
+    color: #363636
+}
+
+.navbar-div {
+  display: flex;
+  justify-content: space-between;
 }

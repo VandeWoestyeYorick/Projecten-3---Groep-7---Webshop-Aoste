@@ -29,10 +29,20 @@
     {% for item in items %}
       {% set item_classes = [
           'navbar-text',
-          'nav-link'
         ]
       %}
-      <a href="{{ item.url }}" class="navbar-text">{{ item.title }}</a>
+      {# <a>{{ item.is_expanded }}</a> #}
+      {% if menu_level == 0 and item.is_expanded %}
+        <a href='#' class="navbar-text dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+        <div class="dropdown-menu">
+          {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
+        </div>
+      {% else %} 
+        <a href="{{ item.url }}" class="navbar-text">{{ item.title }}</a>
+      {% endif %}
+{#       {% if item.below %}
+        {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
+      {% endif %} #}
     {% endfor %}  
   </div>
 {#   {% import _self as menus %}
