@@ -65,6 +65,7 @@
  *   in different view modes.
  */
 #}
+
 {%
   set classes = [
     node.bundle|clean_class,
@@ -94,6 +95,7 @@
       </div>
     </footer>
   {% endif %}
+
 <table class="table table-dark table-striped table-bordered">
   <div{{ content_attributes.addClass('content') }}>
     {{ content }}
@@ -104,12 +106,12 @@ data-target=".multi-collapse" aria-expanded="false"
  aria-controls="multiCollapseExample1 multiCollapseExample2">Koop nu 
 </button>
 <div class="rij">
-<div class="row">
+<div class="row align-items-start">
     {% for i in 0..4 %}
    <div class="col">
      <div class="collapse multi-collapse" id="multiCollapseExample1">
        <div class="card card-body">
-        <a href="">{{ content.field_product_retailers[i] }}</a> 
+        {{ content.field_product_retailers[i] }}
        </div>
      </div>
    </div>

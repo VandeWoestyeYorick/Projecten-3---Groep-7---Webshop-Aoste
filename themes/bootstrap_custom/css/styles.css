@@ -211,5 +211,14 @@ a:hover{
     justify-content: space-around;
     color:green;
 }
-
-
+.imtx{
+    width:120%;
+}
+.imgtxt{
+    width:100%;
+    display:flex;
+}
+.bodytext{
+    padding: 5%;
+    border-left: black;
+}
