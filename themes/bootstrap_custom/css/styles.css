@@ -2,6 +2,19 @@ a:hover {
   text-decoration: none;
 }
 
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d4d4d4;
+}
+
+a:focus {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+
 .nav-custom {
   background-color: #363636;
 }
@@ -252,7 +265,6 @@ a:hover {
 .lang-label {
     display: flex;
     width: 4rem;
-    height:;
 }
 
 .language-hover:hover {
