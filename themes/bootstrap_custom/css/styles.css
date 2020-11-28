@@ -230,16 +230,7 @@ a:hover {
   justify-content: center;
   flex-flow: column;
 }
-/* .dropdown-menu{
-    width: 100%; 
-}
-.dropdown-item {
-    font-size: 4rem;
-    font-weight: 500;
-    display: flex;  
-    height: 1rem;
-   
-} */
+
 .col {
   font-size: 4rem;
 }
