@@ -95,8 +95,21 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
+  <div class="notfound" {{ content_attributes.addClass('content') }}>
+  <h2 class="noacces">
+    {{ content.body }}  
+  </h2> 
+ 
   </div>
-
+  <div class="notfound">
+  <h1 class="titelnotfound">403</h1>
+</div>
+  <div class="notfound">
+  <button onclick="window.location.href='/nl'" class="homeButton">
+    <i class="glyphicon glyphicon-home"></i>
+  </button>
+</div>
+<div class="notfound">
+    {{ content.field_image }}
+</div>
 </article>
