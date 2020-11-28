@@ -81,27 +81,55 @@ a:hover {
   padding: 10px;
 }
 
-.recept-image {
+/* .recept-image {
   width: 30%;
   height: auto;
-}
+} */
 
 .recepten-content {
   color: black;
 }
 
-.leesmeer-btn {
+.recept > h2 {
+  font-size: 4rem;
+}
+
+.recept > h2 > a {
+  color: #363636;
+}
+
+.recept > h2 > a:hover {
+  color: #c21e3d;
+}
+
+.btn-leesmeer {
   background-color: #c21e3d;
   /* Green */
   border: none;
-  border-radius: 25px;
+  border-radius: 1rem;
   color: white;
-  padding: 15px 32px;
+  padding: 1vw 2vw;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.btn-leesmeer > a {
+  color: white;
+}
+
+.btn-leesmeer > a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .recepten-grid {
@@ -211,88 +239,86 @@ a:hover {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  color:#F86600;
-  padding:1%;
+  color: #f86600;
+  padding: 1%;
 }
-.receptOne{
-    margin:auto;
-    width: 100%;
-    color: #707070;
+.receptOne {
+  margin: auto;
+  width: 100%;
+  color: #707070;
 }
-.imgtxt{
-    width:100%;
-    display:flex;
+.imgtxt {
+  width: 100%;
+  display: flex;
 }
-.bodytext{
-    padding: 5%;
-    border-left: black;
+.bodytext {
+  padding: 5%;
+  border-left: black;
 }
-.BedIng{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 5%;
+.BedIng {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 5%;
 }
-.centraal{
-    display:flex;
-    justify-content: center;
-    width:90%
+.centraal {
+  display: flex;
+  justify-content: center;
+  width: 90%;
 }
 
-.ingredienten{
-    font-family: 'Caveat', cursive;
-    width: 40%;
-    margin-right: 10%;
-    border: solid 5px  #c21e3d;
-    padding-bottom: 5%;
-    display:inline-block;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    padding:1%;
-    background:hsla(67, 95%, 95%, 1);
+.ingredienten {
+  font-family: "Caveat", cursive;
+  width: 40%;
+  margin-right: 10%;
+  border: solid 5px #c21e3d;
+  padding-bottom: 5%;
+  display: inline-block;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 1%;
+  background: hsla(67, 95%, 95%, 1);
 }
 .lang-label {
-    display: flex;
-    width: 4rem;
-    height:;
+  display: flex;
+  width: 4rem;
 }
 
 .language-hover:hover {
-    background: #fff;
-    color: #363636
+  background: #fff;
+  color: #363636;
 }
 
 .navbar-div {
   display: flex;
   justify-content: space-between;
 }
-.bereidingswijze{
-    font-family: 'Caveat', cursive;
-    width:55%;
-    padding-left: 1%;
-    border: solid 5px  #c21e3d;
-    padding-bottom: 5%;
-    display:inline-block;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    padding:1%;
-    background:hsla(67, 95%, 95%, 1);
-
+.bereidingswijze {
+  font-family: "Caveat", cursive;
+  width: 55%;
+  padding-left: 1%;
+  border: solid 5px #c21e3d;
+  padding-bottom: 5%;
+  display: inline-block;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 1%;
+  background: hsla(67, 95%, 95%, 1);
 }
-.afbtext{
-    font-family: 'Caveat', cursive;
-    display: flex; 
-    padding: 2%;
-    margin: 2%;
-    margin-top:5%; 
-    text-align:center;
+.afbtext {
+  font-family: "Caveat", cursive;
+  display: flex;
+  padding: 2%;
+  margin: 2%;
+  margin-top: 5%;
+  text-align: center;
 }
-.gebruikteProducten{
-    padding: 1%;
-    display:flex;
+.gebruikteProducten {
+  padding: 1%;
+  display: flex;
 }
 
 .kaart {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: grid;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   height: 400px;
   width: 700px;
 }
@@ -302,14 +328,14 @@ a:hover {
   grid-template-rows: repeat(4, 1fr);
 }
 .personal-intro {
-    background: hsla(67, 95%, 95%, 1);
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 4;
-    justify-content: center;
-    text-align: center;
-    z-index: 3;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  background: hsla(67, 95%, 95%, 1);
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 4;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
