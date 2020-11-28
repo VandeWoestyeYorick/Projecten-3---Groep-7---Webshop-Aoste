@@ -73,11 +73,8 @@
     not node.isPublished() ? 'is-unpublished',
     view_mode ? view_mode|clean_class,
     'clearfix',
-    'justify-content',
-    'text-center',
   ]
 %}
-
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -98,10 +95,18 @@
     </footer>
   {% endif %}
 
-  <div class="container-fluid">
-    <div{{ content_attributes.addClass('content') }}>
-      {{ content }}
-    </div>
+  <div class="notfound" {{ content_attributes.addClass('content') }}>
+    {{ content.body }}   
   </div>
-
+  <div class="notfound">
+  <h1 class="titelnotfound">404</h1>
+</div>
+  <div class="notfound">
+  <button onclick="window.location.href='/nl'" class="homeButton">
+    <i class="glyphicon glyphicon-home"></i>
+  </button>
+</div>
+<div class="notfound">
+    {{ content.field_image }}
+</div>
 </article>
