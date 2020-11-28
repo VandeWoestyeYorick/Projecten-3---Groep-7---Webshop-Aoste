@@ -7,7 +7,7 @@ a:active {
   text-decoration: none;
 }
 
-a:visited {
+nav a:visited {
   color: #d4d4d4;
 }
 
