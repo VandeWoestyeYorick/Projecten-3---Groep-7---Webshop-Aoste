@@ -313,3 +313,27 @@ a:hover {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+
+/* Bottom region
+-------------------------------------------------------------- */
+
+#bottom-wrapper .column {
+  width: 25%;
+  float: left
+}
+
+#bottom-wrapper .block {
+  margin:0 15px;
+}
+
+#bottom-wrapper .block-title {
+  margin-top:15px;
+  font-size: 1.3em;
+}
+
+#bottom-wrapper .region {
+  margin:15px 0;
+}
+/* End Bottom region
+-------------------------------------------------------------- */
