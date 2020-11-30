@@ -52,6 +52,24 @@ a:focus {
 .searchbar {
   /* margin: 0 auto; */
   border-radius: 25px;
+  width: 600px!important;
+}
+
+.block-search-form-block {
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.searchbar-btn {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.branding {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
 }
 
 .input-group {
