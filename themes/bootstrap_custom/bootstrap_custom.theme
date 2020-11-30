@@ -5,9 +5,31 @@
  *
  * Place your custom PHP code in this file.
  */
+use Drupal\Core\Database\Query\AlterableInterface;
 
 function bootstrap_custom_preprocess_block(&$variables) {
 
   $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
   $variables['language'] = $language;
+}
+
+function bootstrap_custom_form_search_form_alter(&$form, &$form_state) {
+  $form['help_link']['#access'] = FALSE;
+  $form['advanced']['#access'] = FALSE;
+  $form['basic']['keys']['#title'] = '';
+  $manager = \Drupal::languageManager();
+  $form['advanced']['lang-fieldset']['language']['#default_value'] = [$manager->getCurrentLanguage()->getId()];
+}
+
+function bootstrap_custom_form_search_block_form_alter(&$form, &$form_state) {
+  $manager = \Drupal::languageManager();
+
+  $form['advanced-form'] = [
+    '#type' => 'hidden',
+    '#value' => 1,
+  ];
+  $form['f[0]'] = [
+    '#type' => 'hidden',
+    '#value' => 'language:' . $manager->getCurrentLanguage()->getId(),
+  ];
 }
