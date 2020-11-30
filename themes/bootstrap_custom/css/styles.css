@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+body{
+  font-size:14px;
+}
+h1{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-family: Signika,serif, sans-serif;
+  font-size: 50px;
+  padding:2%;
+  margin:2%;
+}
+
 
 a:hover {
   text-decoration: none;
@@ -19,14 +33,11 @@ a:focus {
 
 .nav-custom {
   background-color: #363636;
-}
-
-.nav-custom .navbar-text {
-  /*color: #f00;*/
+  font-size:120%;
+  font-family: Signika,serif, sans-serif;
 }
 
 .navbar-text {
-  /*color: #b2b8c2;*/
   color: #d4d4d4;
 }
 
@@ -287,8 +298,7 @@ a:hover {
 }
 .centraal {
   display: flex;
-  justify-content: center;
-  width: 90%;
+  width: 60%;
 }
 
 .ingredienten {
@@ -330,9 +340,8 @@ a:hover {
 .afbtext {
   font-family: "Caveat", cursive;
   display: flex;
-  padding: 2%;
-  margin: 2%;
-  margin-top: 5%;
+  padding: 2% 2% 2% 0%;
+  margin: 2% 2% 0% 0%;
   text-align: center;
 }
 .gebruikteProducten {
@@ -345,7 +354,7 @@ a:hover {
   display: grid;
   font-family: "Caveat", cursive;
   height: 400px;
-  width: 700px;
+  width: 40%;
 }
 
 .front {
