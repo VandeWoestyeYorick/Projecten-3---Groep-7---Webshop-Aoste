@@ -21,6 +21,14 @@
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
   {% endif %}
+{% endblock %}
+
+{# {% block content %} #}
+{#   {% if site_logo %}
+    <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %} #}
 {#   {% if site_logo %}
     <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
@@ -32,4 +40,4 @@
   {% if site_slogan %}
     <p class="navbar-text">{{ site_slogan }}</p>
   {% endif %} #}
-{% endblock %}
+{# {% endblock %} #}
