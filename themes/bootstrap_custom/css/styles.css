@@ -289,13 +289,22 @@ a:hover {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  color: #f86600;
-  padding: 1%;
+  color: #808285;
+  padding-bottom:1%;
 }
+.rijIcon{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top:1%;
+  font-size: 300%;
+  color: #808285;
+}
+
 .receptOne {
   margin: auto;
   width: 100%;
-  color: #707070;
+  color: #808285;
 }
 .imgtxt {
   width: 100%;
@@ -306,26 +315,30 @@ a:hover {
   border-left: black;
 }
 .BedIng {
-  display: flex;
-  flex-wrap: nowrap;
   padding-bottom: 5%;
+  font-family: "Open Sans",sans-serif;
 }
 .centraal {
   display: flex;
   width: 60%;
 }
 
-.ingredienten {
-  font-family: "Caveat", cursive;
-  width: 40%;
-  margin-right: 10%;
-  border: solid 5px #c21e3d;
-  padding-bottom: 5%;
-  display: inline-block;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  padding: 1%;
-  background: hsla(67, 95%, 95%, 1);
+.BedIng ul {
+  list-style: none;
 }
+
+.BedIng ul li:before {
+  content: '✓';
+  margin-right: 2%;
+}
+.BedIng ol li {
+  padding-left: 2%;
+}
+
+.BedIng ol{
+  padding-left:4%;
+}
+
 .lang-label {
   display: flex;
   width: 4rem;
@@ -340,19 +353,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
-.bereidingswijze {
-  font-family: "Caveat", cursive;
-  width: 55%;
-  padding-left: 1%;
-  border: solid 5px #c21e3d;
-  padding-bottom: 5%;
-  display: inline-block;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  padding: 1%;
-  background: hsla(67, 95%, 95%, 1);
-}
+
 .afbtext {
-  font-family: "Caveat", cursive;
   display: flex;
   padding: 2% 2% 2% 0%;
   margin: 2% 2% 0% 0%;
@@ -366,7 +368,7 @@ a:hover {
 .kaart {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: grid;
-  font-family: "Caveat", cursive;
+  font-family: Signika,serif, sans-serif;
   height: 400px;
   width: 40%;
 }
