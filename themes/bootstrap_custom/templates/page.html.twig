@@ -56,11 +56,12 @@
  * @see html.html.twig
  */
 #}
-{% block branding %}
+{# {% block branding %}
   <div class="container-fluid">
     {{ page.branding }}
   </div>
-{% endblock %}
+{% endblock %} #}
+<div class="branding container-fluid"></div>
 {% set container = 'container-fluid' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}

@@ -20,6 +20,8 @@
     <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
+  {% else %}
+    <div style="height: 100px;"></div>
   {% endif %}
 {% endblock %}
 

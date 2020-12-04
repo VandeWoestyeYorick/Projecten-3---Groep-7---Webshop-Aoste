@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
 body{
   font-size:14px;
+/*  padding-top: 0!important;
+  margin-top: 0!important;*/
+  /* re-enable when ready */
 }
 h1{
   width: 100%;
@@ -28,21 +32,29 @@ a:focus {
 }
 
 .nav-custom {
-  background-color: #363636;
+  background-color: #fff;
   font-size:120%;
   font-family: Signika,serif, sans-serif;
+  align-items: right;
 }
 
 .navbar-text {
-  color: #d4d4d4;
+  color: black;
+  font-family: Signika,serif, sans-serif;
+  font-size: inherit;
 }
 
 .navbar-text:hover {
-  color: #fff;
+  color: #c21e3d!important;
 }
 
 .navbar-text .nav-link {
   color: #fff;
+}
+
+.last-item {
+  border-left: 2px solid #c21e3d;
+  padding-left: 15px;
 }
 
 .header-custom {
@@ -59,13 +71,15 @@ a:focus {
 .searchbar {
   /* margin: 0 auto; */
   border-radius: 25px;
-  width: 600px!important;
+  width: 300px!important;
+  vertical-align: middle;
+  margin: auto;
 }
-
-.block-search-form-block {
-  top: 50%;
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
+.block-search{
+  display: flex;
+}
+.search-block-form {
+  margin: auto;
 }
 
 .searchbar-btn {
@@ -74,9 +88,11 @@ a:focus {
 }
 
 .branding {
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   display: flex;
+  background-color: #c21e3d;
+  height: 20px;
 }
 
 .input-group {
@@ -287,6 +303,7 @@ a:focus {
 .page-header {
   color: #c21e3d;
   text-align: center;
+  border-color: #c21e3d;
 }
 a:hover {
   color: #c21e3d;
@@ -372,9 +389,21 @@ a:hover {
   color: #363636;
 }
 
+.navbar-btn {
+  margin-right: auto;
+}
+
 .navbar-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-div a:active {
+  color: #363636;
+}
+.navbar-div a:visited {
+  color: #363636;
 }
 
 .afbtext {
