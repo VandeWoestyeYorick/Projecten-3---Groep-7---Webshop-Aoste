@@ -80,42 +80,93 @@
 
   {{ title_prefix }}
   {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  <h2{{ title_attributes }}>
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if display_submitted %}
+    {% if display_submitted %}
     <footer>
       {{ author_picture }}
       <div{{ author_attributes.addClass('author') }}>
         {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
         {{ metadata }}
-      </div>
+        </div>
     </footer>
-  {% endif %}
+    {% endif %}
+    <div{{ content_attributes.addClass('content') }}>
 
-<table class="table table-dark table-striped table-bordered">
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
-  </div>
-</table>
-<button class="btn btn-primary koopnu" type="button" data-toggle="collapse"
-data-target=".multi-collapse" aria-expanded="false"
- aria-controls="multiCollapseExample1 multiCollapseExample2">Koop nu 
-</button>
-<div class="rij">
-<div class="row align-items-start">
-    {% for i in 0..4 %}
-   <div class="col">
-     <div class="collapse multi-collapse" id="multiCollapseExample1">
-       <div class="card card-body">
-        {{ content.field_product_retailers[i] }}
-       </div>
-     </div>
-   </div>
-    {% endfor %}
- </div>
-</div>
-</article>
+      <div class="productbodyimage">
+        <div class="productimage">
+          {{ content.field_image }}
+        </div>
+        <div class="productbody">
+          {{ content.field_product_categorie}}
+          {{ content.body}}
+          {{ content.field_nutriscore}}
+          <button class="btn koopnu" type="button" data-toggle="collapse" data-target=".multi-collapse"
+            aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Koop nu
+          </button>
+          <div class="rij">
+            <div class="row align-items-start">
+              {% for i in 0..4 %}
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body">
+                    {{ content.field_product_retailers[i] }}
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse-content">
+        <div class="collapse" id="collapseExample">
+          <div class="tabellen">
+            <table class="voedingelem">
+              <tr class="dikkerelijn">
+                <td>{{ content.field_product_gewicht}}</td>
+              </tr>
+              <tr>
+                <td>{{ content.field_voeding_energie}}</td>
+              </tr>
+              <tr class="roderand">
+                <td>{{ content.field_voeding_kilocalorieen}}</td>
+              </tr>
+              <tr>
+                <td>{{ content.field_voeding_vetten}}</td>
+              </tr>
+              <tr class="roderand">
+                <td>{{ content.field_voeding_verzadigde_vetten}}</td>
+              </tr>
+              <tr>
+                <td>{{ content.field_voeding_koolhydraten}}</td>
+              </tr>
+              <tr class="roderand">
+                <td>{{ content.field_voeding_suikers}}</td>
+              </tr>
+              <tr class="roderand">
+                <td>{{ content.field_voeding_eiwitten}}</td>
+              </tr>
+              <tr class="dikkerelijn">
+                <td>{{ content.field_voeding_zout}}</td>
+              </tr>
+            </table>
+            <div class="alling">
+            {{ content.field_product_allergenen}}
+            {{ content.field_product_ingredienten}}
+            </div>
+          </div>
+          {{ content.field_product_gebruikt_in}}
+          {{ content.field_product_promo_door}}
+        </div>
+      </div>
+      <a class="btn collapsed expand" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+        aria-controls="collapseExample">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+      </div>
+      </article>
