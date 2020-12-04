@@ -22,88 +22,28 @@
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
 {{ menus.menu_links(items, attributes, 0) }}
-
-{% macro menu_links(items, attributes, menu_level) %}
+{% macro menu_links(items,attributes, menu_level) %}
   {% import _self as menus %}
-  <div{{ attributes.addClass('nav-custom') }} id="menu">
-    {% for item in items %}
-      {% set item_classes = [
-          'navbar-text',
-        ]
-      %}
-      {# <a>{{ item.is_expanded }}</a> #}
-      {% if menu_level == 0 and item.is_expanded %}
-          <a href='#' class="navbar-text dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">{{ item.title }}</a>
-          <div class="dropdown-menu">
-            <li class="dropdown">
-              {% for submenu in item.below %}
-              <a href="{{ submenu.url }}" class="dropdown-item custom-dropdown-item">{{ submenu.title }}</a>
-  {#           {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }} #}
-              {% endfor %}
+  <ul class="nav navbar-nav">
+  {% for item in items %}
+    {% if menu_level == 0 and item.is_expanded %}
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        {{ item.title }} <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          {% for submenu in item.below %}
+            <li class="dropdown-item">
+              <a href="{{ submenu.url }}" class="dropdown-item">{{ submenu.title }}</a>
             </li>
-
-          </div>
-      {% else %} 
-        <a href="{{ item.url }}" class="navbar-text">{{ item.title }}</a>
-      {% endif %}
-{#       {% if item.below %}
-        {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
-      {% endif %} #}
-    {% endfor %}  
-  </div>
-{#   {% raw %}
-  <script type="text/javascript">
-    const $dd = $(".dropdown");
-    const $dropdownToggle = $(".dropdown-toggle");
-    const $dropdownMenu = $(".dropdown-menu");
-    const showClass = "show";
-
-    $(window).on("load resize", function() {
-      if (this.matchMedia("(min-width: 768px)").matches) {
-        $dd.hover(
-          function() {
-            const $this = $(this);
-            $this.addClass(showClass);
-            $this.find($dropdownToggle).attr("aria-expanded", "true");
-            $this.find($dropdownMenu).addClass(showClass);
-          },
-          function() {
-            const $this = $(this);
-            $this.removeClass(showClass);
-            $this.find($dropdownToggle).attr("aria-expanded", "false");
-            $this.find($dropdownMenu).removeClass(showClass);
-          }
-        );
-      } else {
-        $dd.off("mouseenter mouseleave");
-      }
-    });
-  </script>
-{% endraw %} #}
-{#   {% import _self as menus %}
-  {% if items %}
-    {% if menu_level == 0 %}
-      <div{{ attributes.addClass('nav-custom') }}>
+          {% endfor %}
+        </ul>
+      </li>
     {% else %}
-      <div{{ attributes.addClass('dropdown-menu') }}>
+      <li class="">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
     {% endif %}
-    {% for item in items %}
-      {%
-        set item_classes = [
-          'navbar-text',
-          'nav-link'
-        ]
-      %}
-      {% if menu_level == 0 and item.is_expanded %}
-        <a href="{{ item.url }}" class="dropdown-toggle" data-target="#" data-toggle="dropdown">{{ item.title }} <span class="caret"></span></a>
-      {% else %}
-        {{ link(item.title, item.url) }}
-      {% endif %}
-      {% if item.below %}
-        {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
-      {% endif %}
-      </div>
-    {% endfor %}
-    </div>
-  {% endif %} #}
+  {% endfor %}
+  </ul>
 {% endmacro %}
