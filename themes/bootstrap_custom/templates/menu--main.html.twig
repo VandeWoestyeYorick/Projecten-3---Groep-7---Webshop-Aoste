@@ -27,21 +27,21 @@
   <ul class="nav navbar-nav">
   {% for item in items %}
     {% if menu_level == 0 and item.is_expanded %}
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      <li class="dropdown navbar-text">
+        <a class="dropdown-toggle navbar-drop" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
         {{ item.title }} <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
           {% for submenu in item.below %}
             <li class="dropdown-item">
-              <a href="{{ submenu.url }}" class="dropdown-item">{{ submenu.title }}</a>
+              <a href="{{ submenu.url }}" class="dropdown-item navbar-drop">{{ submenu.title }}</a>
             </li>
           {% endfor %}
         </ul>
       </li>
     {% else %}
-      <li class="">
-        <a href="{{ item.url }}">{{ item.title }}</a>
+      <li >
+        <a class="navbar-text" href="{{ item.url }}">{{ item.title }}</a>
       </li>
     {% endif %}
   {% endfor %}

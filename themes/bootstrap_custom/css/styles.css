@@ -28,7 +28,7 @@ a:active {
 }
 
 a:focus {
-  color: #d4d4d4;
+  color: #d4d4d4!important;
   text-decoration: none;
 }
 
@@ -37,6 +37,10 @@ a:focus {
   font-size:120%;
   font-family: Signika,serif, sans-serif;
   align-items: right;
+}
+
+.dropdown-toggle {
+    color: #333333!important;
 }
 
 .navbar-text {
@@ -51,6 +55,10 @@ a:focus {
 
 .navbar-text .nav-link {
   color: #fff;
+}
+
+.navbar-drop:hover {
+    color: #c21e3d!important;
 }
 
 .last-item {
@@ -402,13 +410,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navbar-div a:active {
-  color: #363636;
-}
-.navbar-div a:visited {
-  color: #363636;
 }
 
 .afbtext {
