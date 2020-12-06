@@ -127,17 +127,31 @@
           <button class="btn koopnu" type="button" data-toggle="collapse" data-target=".multi-collapse"
             aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Koop nu
           </button>
-          <div class="rij">
-            <div class="row align-items-start">
+          <div>
+            <div class="retailers-div">
               {% for i in 0..4 %}
-              <div class="col">
+              <div>
                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                   <div class="card card-body">
-                    {{ content.field_product_retailers[i] }}
+                    {% if "carrefour" in content.field_product_retailers[i] or ("Carrefour" in content.field_product_retailers[i]) %}
+                      <a href="{{ content.field_product_retailers[i]['#url'] }}">
+                        <img class="logo-img img-responsive" src="https://i.imgur.com/W6ygpG8.jpg" alt="Carrefour-logo">
+                      </a>
+                    {% endif %}
+                    {% if "Delhaize" in content.field_product_retailers[i] or ("delhaize" in content.field_product_retailers[i]) %}
+                      <a href="{{ content.field_product_retailers[i]['#url'] }}">
+                        <img class="logo-img img-responsive" src="https://i.imgur.com/9kpkvOJ.jpg" alt="Delhaize-logo">
+                      </a>
+                    {% endif %}
+                    {% if "colruyt" in content.field_product_retailers[i] or ("Colruyt" in content.field_product_retailers[i]) %}
+                      <a href="{{ content.field_product_retailers[i]['#url'] }}">
+                        <img class="logo-img img-responsive" src="https://i.imgur.com/EtI2BSV.jpg" alt="Colruyt-logo">
+                      </a>
+                    {% endif %}
                   </div>
                 </div>
               </div>
-              {% endfor %}
+            {% endfor %}
             </div>
           </div>
         </div>

@@ -509,6 +509,20 @@ a:hover {
   height: auto;
 }
 
+.logo-img {
+  display: flex;
+  /*padding-top: 2%;*/
+  /*width: 30%;*/
+  height: auto;
+}
+
+.retailers-div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
 
 .tabellen{
   display: flex;
