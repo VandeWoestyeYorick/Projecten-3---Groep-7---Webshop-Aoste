@@ -96,15 +96,34 @@
     </footer>
     {% endif %}
     <div{{ content_attributes.addClass('content') }}>
-
+      <div class="promo-img">
+        {{ content.field_product_promo_door }}
+      </div>
       <div class="productbodyimage">
         <div class="productimage">
           {{ content.field_image }}
         </div>
         <div class="productbody">
+          <h2>
           {{ content.field_product_categorie}}
+          </h2>
           {{ content.body}}
-          {{ content.field_nutriscore}}
+          {% if 'A' in content.field_nutriscore.0 %}
+            <img class="nutri-img img-responsive" src="https://i.imgur.com/cLYyKpx.png" alt="Nutri A">
+          {% elseif 'B' in content.field_nutriscore.0 %}
+            <img class="nutri-img img-responsive" src="https://i.imgur.com/azNMHbT.png" alt="Nutri B">
+          {% elseif 'C' in content.field_nutriscore.0 %}
+          {# {​​​​% if 'C' in content.field_nutriscore.0 %}​​​​ #}
+            <img class="nutri-img img-responsive" src="https://i.imgur.com/z9bazja.png" alt="Nutri C">
+          {% elseif 'D' in content.field_nutriscore.0 %}
+            <img class="nutri-img img-responsive" src="https://i.imgur.com/w0FVw6V.png" alt="Nutri D">
+          {% elseif 'E' in content.field_nutriscore.0 %}
+            <img class="nutri-img img-responsive" src="https://i.imgur.com/YkZCJOg.png" alt="Nutri E">
+          {% else %}
+            <p>Geen nutriscore gekend</p>
+          {% endif %}
+          {# HIDDEN GALLERY FOUND AT https://imgur.com/a/qOKd13U #}
+
           <button class="btn koopnu" type="button" data-toggle="collapse" data-target=".multi-collapse"
             aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Koop nu
           </button>
@@ -160,8 +179,11 @@
             {{ content.field_product_ingredienten}}
             </div>
           </div>
-          {{ content.field_product_gebruikt_in}}
-          {{ content.field_product_promo_door}}
+          {% if content.field_product_gebruikt_in.value %}
+            <div class="thumbnail" style="padding-top = 1%;">
+              {{ content.field_product_gebruikt_in}}
+            </div>
+          {% endif %}
         </div>
       </div>
       <a class="btn collapsed expand" data-toggle="collapse" href="#collapseExample" aria-expanded="false"

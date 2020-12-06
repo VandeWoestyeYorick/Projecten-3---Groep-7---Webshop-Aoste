@@ -32,6 +32,15 @@ a:focus {
   text-decoration: none;
 }
 
+.promo-img {
+  width: 30%;
+  margin: 1% 1% 1% 34%;
+}
+
+.promo-img h2 {
+  display: none;
+}
+
 .nav-custom {
   background-color: #fff;
   font-size:120%;
@@ -132,7 +141,7 @@ a:focus {
 }
 
 .thumbnail {
-  height: 350px;
+  height: 450px;
 }
 
 .thumbnail {
@@ -487,15 +496,25 @@ a:hover {
   width:45%;
   margin:1%;
 }
+
 .productbody .field--item {
   font-size:150%;
   margin:1%;
+  color: #c21e3d!important;
 }
+
+.nutri-img {
+  padding-top: 2%;
+  width: 30%;
+  height: auto;
+}
+
+
 .tabellen{
   display: flex;
 }
 .voedingelem{
-  width:35%;
+  width:50%;
 }
 .voedingelem .field--item{
   float: right;
