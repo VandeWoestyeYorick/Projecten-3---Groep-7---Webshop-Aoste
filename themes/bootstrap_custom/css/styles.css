@@ -117,6 +117,7 @@ a:focus {
 }
 
 .searchbar-btn {
+  color:#fff;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
@@ -439,38 +440,28 @@ a:hover {
 
 .afbtext {
   display: flex;
-  padding: 2% 2% 2% 0%;
-  margin: 2% 2% 0% 0%;
   text-align: center;
 }
 .gebruikteProducten {
-  padding: 1%;
-  display: flex;
+  width:40%;
 }
 
-.kaart {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  display: grid;
-  font-family: Signika,serif, sans-serif;
-  height: 400px;
-  width: 40%;
-}
-
-.front {
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-.personal-intro {
-  background: hsla(67, 95%, 95%, 1);
+.koopnuteaser{
+  margin-left: 10%;
+  width:80%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #c21e3d;
   display: flex;
-  flex-direction: column;
-  grid-column: 1 / span 12;
-  grid-row: 1 / span 4;
+  height: 5rem;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  z-index: 3;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  flex-flow: column;
+  margin-top:5%;
+}
+.teaserProduct{
+  width:100%;
 }
 .notfound {
   text-align: center;
@@ -505,7 +496,6 @@ a:hover {
   justify-content: space-between;
 }
 .productimage{
- 
   width:55%
 }
 .productbody{

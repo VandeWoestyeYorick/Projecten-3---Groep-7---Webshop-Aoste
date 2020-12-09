@@ -65,60 +65,67 @@
  *   in different view modes.
  */
 #}
+
 {%
-  set classes = [
-    node.bundle|clean_class,
-    node.isPromoted() ? 'is-promoted',
-    node.isSticky() ? 'is-sticky',
-    not node.isPublished() ? 'is-unpublished',
-    view_mode ? view_mode|clean_class,
-    'clearfix',
-  ]
-%}
-<article class="receptOne" {{ attributes.addClass(classes) }}>
-
-  {{ title_prefix }}
-  {% if not page %}
-  <h2{{ title_attributes }}>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-    {% endif %}
-    {{ title_suffix }}
-
-    {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-        </div>
-    </footer>
-    {% endif %}
-    {% if label_hidden %}
-    {% else %}
-    <div {{ content_attributes.addClass('content') }}>
-      <div class="afbtext">
-        <div class="centraal">
-          {{ content.field_recept_afbeelding }}
-        </div>
-        <div class="gebruikteProducten">
-            {{ content.	field_recept_gebruikte_producten }}
-      </div> 
-      </div>
-      <div class="rijIcon">
-      <span class="glyphicon glyphicon-hourglass"></span>  
-      <span class="glyphicon glyphicon-cutlery"></span>
-      </div>
-      <div class="rij">
-        {{ content.field_recept_bereidingstijd }}
-        {{ content.field_recept_porties }}
-      </div>
-      <div class="BedIng">
-          {{ content.field_recept_ingredienten }}
-          {{ content.field_recept_bereidingswijze }}
-    
-      </div>
-    </div>
-{% endif %}
-
-</article>
+    set classes = [
+      node.bundle|clean_class,
+      node.isPromoted() ? 'is-promoted',
+      node.isSticky() ? 'is-sticky',
+      not node.isPublished() ? 'is-unpublished',
+      view_mode ? view_mode|clean_class,
+      'clearfix',
+    ]
+  %}
+  <article{{ attributes.addClass(classes) }}>
+  
+    {{ title_prefix }}
+    {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+      {% endif %}
+      {{ title_suffix }}
+  
+      {% if display_submitted %}
+      <footer>
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('author') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+          </div>
+      </footer>
+      {% endif %}
+      <div{{ content_attributes.addClass('content') }}>
+          <div class="teaserProduct">
+          <div>
+            {{ content.field_image }}
+          </div>
+            <button class="btn koopnuteaser" type="button" data-toggle="collapse" data-target=".multi-collapse"
+              aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Koop nu
+            </button>
+              <div class="retailers-div">
+                {% for i in 0..4 %}
+                <div>
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                      {% if "carrefour" in content.field_product_retailers[i] or ("Carrefour" in content.field_product_retailers[i]) %}
+                        <a href="{{ content.field_product_retailers[i]['#url'] }}">
+                          <img class="logo-img img-responsive" src="https://i.imgur.com/W6ygpG8.jpg" alt="Carrefour-logo">
+                        </a>
+                      {% endif %}
+                      {% if "Delhaize" in content.field_product_retailers[i] or ("delhaize" in content.field_product_retailers[i]) %}
+                        <a href="{{ content.field_product_retailers[i]['#url'] }}">
+                          <img class="logo-img img-responsive" src="https://i.imgur.com/9kpkvOJ.jpg" alt="Delhaize-logo">
+                        </a>
+                      {% endif %}
+                      {% if "colruyt" in content.field_product_retailers[i] or ("Colruyt" in content.field_product_retailers[i]) %}
+                        <a href="{{ content.field_product_retailers[i]['#url'] }}">
+                          <img class="logo-img img-responsive" src="https://i.imgur.com/EtI2BSV.jpg" alt="Colruyt-logo">
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+        </article>
