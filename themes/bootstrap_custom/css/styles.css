@@ -38,6 +38,62 @@ a:focus {
   font-size: 250%;
 }
 
+.pager li > a:hover {
+  transform: scale(0.9);
+}
+
+.test_blue {
+  background-color: blue;
+}
+
+.promo-producten a {
+  color: black;
+}
+
+.promo-font {
+  font-family: Signika,serif, sans-serif;
+}
+
+.promo-producten {
+    color: #c21e3d;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.promo-producten a:hover {
+  color: #c21e3d;
+}
+
+.promo-file {
+  color: white;
+  background-color: #c21e3d;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.promo-description {
+  margin-top: 20px;
+}
+
+.promo-file:hover {
+  color: black;
+}
+
+.promo {
+  padding-bottom: 20px;
+}
+
+.date-size {
+  font-size: 200%
+}
+
+.coupon-button {
+  margin: 0 auto;
+}
 /*.next a {
   font-size: 200%;
   width: auto;
@@ -168,6 +224,7 @@ a:focus {
 
 .thumbnail:hover {
   border-color: #c21e3d;
+  transform: scale(0.95);
 }
 
 .caption {
