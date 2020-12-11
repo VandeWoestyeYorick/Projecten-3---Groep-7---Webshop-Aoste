@@ -215,11 +215,9 @@ a:focus {
 
 .thumbnail {
   height: 450px;
-}
-
-.thumbnail {
   display: flex;
   flex-direction: column;
+  transition: transform 0.25s ease-in;
 }
 
 .thumbnail:hover {
@@ -276,6 +274,7 @@ a:focus {
 
 .recept > h2 > a {
   color: #363636;
+  font-size: 0.75em;
 }
 
 .recept > h2 > a:hover {
