@@ -103,15 +103,6 @@ a:focus {
 .coupon-button {
   margin: 0 auto;
 }
-/*.next a {
-  font-size: 200%;
-  width: auto;
-}
-
-.previous a {
-  height: 200%;
-  width: auto;
-}*/
 
 .promo-img {
   width: 30%;
@@ -161,14 +152,11 @@ a:focus {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* padding: 30px; */
   margin: 0 auto;
   justify-content: space-between;
-  /* width: 100%; */
 }
 
 .searchbar {
-  /* margin: 0 auto; */
   border-radius: 25px;
   width: 300px!important;
   vertical-align: middle;
@@ -260,18 +248,10 @@ a:focus {
 }
 
 .recept {
-  /*border: 4px solid #c21e3d;*/
   border-radius: 10px;
-  /* border-color: #C21E3D;
-    border-width: 2px; */
   width: 100%;
   padding: 10px;
 }
-
-/* .recept-image {
-  width: 30%;
-  height: auto;
-} */
 
 .recepten-content {
   color: black;
@@ -292,7 +272,6 @@ a:focus {
 
 .btn-leesmeer {
   background-color: #c21e3d;
-  /* Green */
   border: none;
   border-radius: 1rem;
   color: white;
@@ -321,8 +300,6 @@ a:focus {
 }
 
 .recepten-grid {
-  /* width: 50%;
-    margin: 0 auto; */
   padding: 10px;
 }
 
@@ -351,7 +328,6 @@ a:focus {
 }
 
 .padding-recepten-title {
-  /* padding: 10px; */
   padding: 200px auto 10px auto;
 }
 
@@ -368,7 +344,6 @@ a:focus {
 }
 
 .footer-column {
-  /* display: block; */
   padding: 0 5px 0 0;
 }
 
@@ -582,8 +557,6 @@ a:hover {
 
 .logo-img {
   display: flex;
-  /*padding-top: 2%;*/
-  /*width: 30%;*/
   height: auto;
 }
 
@@ -646,7 +619,6 @@ a:hover {
 
 #bottom-wrapper .block-title {
   margin-top: 15px;
-  /*font-size: 1.3em;*/
 }
 
 #bottom-wrapper .region {
