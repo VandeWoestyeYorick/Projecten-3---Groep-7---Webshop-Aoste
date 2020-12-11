@@ -13,6 +13,12 @@ function bootstrap_custom_preprocess_block(&$variables) {
   $variables['language'] = $language;
 }
 
+function bootstrap_custom_preprocess_page(&$variables) {
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
+}
+
 function bootstrap_custom_form_search_form_alter(&$form, &$form_state) {
   $form['help_link']['#access'] = FALSE;
   $form['advanced']['#access'] = FALSE;
