@@ -31,6 +31,15 @@ a:focus {
   text-decoration: none;
 }
 
+.view-filters form {
+  text-align: center;
+}
+
+.js-form-type-search {
+  vertical-align: middle;
+  display: inline;
+}
+
 .pager li > a {
   background-color: #c21e3d!important;
   color: #fff;
