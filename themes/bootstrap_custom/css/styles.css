@@ -248,9 +248,9 @@ a:focus {
 }
 
 .recept {
-  border-radius: 10px;
   width: 100%;
   padding: 10px;
+  border-left: solid 2px #c21e3d;
 }
 
 .recepten-content {
@@ -258,7 +258,9 @@ a:focus {
 }
 
 .recept > h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  width: 80%;
+  padding-left: 10%;
 }
 
 .recept > h2 > a {
@@ -607,6 +609,14 @@ a:hover {
 .alling{
  width:100%;
  padding-left:25%;
+}
+.gebruiktin{
+  margin-top: 4%;
+  display: flex;
+}
+
+.field.field--name-field-product-gebruikt-in.field--type-entity-reference.field--label-hidden.field--items.quickedit-field{
+  display: flex;
 }
 #bottom-wrapper .column {
   width: 25%;

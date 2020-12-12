@@ -191,12 +191,7 @@
             {{ content.field_product_ingredienten}}
             </div>
           </div>
-          {{ content.field_product_gebruikt_in}}
-          {% if content.field_product_gebruikt_in.value %}
-            <div class="thumbnail">
-              {{ content.field_product_gebruikt_in}}
-            </div>
-          {% endif %}
+          <div class="gebruiktin">{{ content.field_product_gebruikt_in}}</div> 
         </div>
       </div>
       <a class="btn collapsed expand" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
