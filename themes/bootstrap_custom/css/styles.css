@@ -232,7 +232,7 @@ a:focus {
 }
 
 .caption a {
-  font-size: 1.5vw;
+  font-size: 2em;
   color: #c21e3d;
 }
 
@@ -633,4 +633,19 @@ a:hover {
 
 #bottom-wrapper .region {
   margin: 15px 0;
+}
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 22px;
+  }
+  .field--item{
+    font-size:100%;
+  }
+  .field--label{
+    font-size:100%;
+  }
+  .rijIcon{
+    font-size:100%;
+  }
+  
 }
